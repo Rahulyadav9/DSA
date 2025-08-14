@@ -1,6 +1,6 @@
 # 🚨 Must Solve These 50 Last-Moment DSA Questions Before Your Interview 🚨  
 Each question should be solved in **< 40 min (with code)**
-
+solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 ---
 
 ## 🔹 Arrays
