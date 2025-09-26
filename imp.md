@@ -1,7 +1,7 @@
 const input = ["eat", "tea", "tan", "ate", "nat", "bat"] 
-// output::: [ // ["eat", "tea", "ate"], // ["tan", "nat"], // ["bat"] // ];
+# output::: [ // ["eat", "tea", "ate"], // ["tan", "nat"], // ["bat"] // ];
 
-const input = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
 
 function groupAnagrams(words) {
   const map = new Map();
