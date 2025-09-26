@@ -13,19 +13,20 @@ Output: [
   ["bat"]
 ]
 const input = ["eat", "tea", "tan", "ate", "nat", "bat"];
-
 function groupAnagrams(words) {
-  const map = new Map();
+  const map = {}
 
   for (let word of words) {
+    // Sort characters → unique key for anagrams
     const key = word.split('').sort().join('');
-    if (!map.has(key)) {
-      map.set(key, []);
+    
+    if (!map[key]) {
+      map[key] =  [];
     }
-    map.get(key).push(word);
+    map[key].push(word);
   }
-
-  return Array.from(map.values());
+  console.log(map)
+  return Object.values(map);
 }
 
 console.log(groupAnagrams(input));
