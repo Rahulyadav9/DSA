@@ -47,12 +47,83 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 
 
 ## 🔹 Strings
-6. Valid Palindrome  
-7. Longest Substring Without Repeating Characters  
-8. Group Anagrams  
-9. Longest Palindromic Substring  
-10. Valid Parentheses  
+6. Valid Palindrome
+   ```
+     Input: s = "A man, a plan, a canal: Panama"
+     Output: true
 
+     Input: s = "race a car"
+     Output: false
+
+     Input: s = " "
+      Output: true
+ 
+   ```
+
+8. Longest Substring Without Repeating Characters
+    ```
+   Input: s = "abcabcbb"
+   Output: 3
+   Explanation: The answer is "abc".
+   text
+   Copy code
+   Input: s = "bbbbb"
+   Output: 1
+   Explanation: The answer is "b".
+   text
+   Copy code
+   Input: s = "pwwkew"
+   Output: 3
+   Explanation: The answer is "wke"
+   ```
+10. Group Anagrams
+   ```
+      Input: strs = ["eat","tea","tan","ate","nat","bat"]
+      Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
+      text
+      Copy code
+      Input: strs = [""]
+      Output: [[""]]
+      text
+      Copy code
+      Input: strs = ["a"]
+      Output: [["a"]]
+   ```
+12. Longest Palindromic Substring
+    ```
+      Input: s = "babad"
+      Output: "bab"
+      Explanation: "aba" is also a valid answer.
+      text
+      Copy code
+      Input: s = "cbbd"
+      Output: "bb"
+      text
+      Copy code
+      Input: s = "a"
+      Output: "a"
+    ```  
+14. Valid Parentheses  
+   ```
+     Input: s = "()"
+      Output: true
+      text
+      Copy code
+      Input: s = "()[]{}"
+      Output: true
+      text
+      Copy code
+      Input: s = "(]"
+      Output: false
+      text
+      Copy code
+      Input: s = "([)]"
+      Output: false
+      text
+      Copy code
+      Input: s = "{[]}"
+      Output: true
+         ```
 ---
 
 ## 🔹 Linked List
