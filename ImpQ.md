@@ -4,13 +4,47 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 ---
 
 ## 🔹 Arrays
-1. Two Sum  
-2. Best Time to Buy and Sell Stock  
-3. Maximum Subarray (Kadane’s Algorithm)  
-4. Merge Intervals  
-5. Product of Array Except Self  
+1. Two Sum
+   ```
+   Input: nums = [2,7,11,15], target = 9
+   Output: [0,1]
+    ```
+2. Best Time to Buy and Sell Stock
+    ```Input: prices = [7,1,5,3,6,4]
+Output: 5 (Buy on day 2 → 1, sell on day 5 → 6)
 
----
+Input: prices = [7,6,4,3,1]
+Output: 0 (No profit possible)```
+3. Maximum Subarray (Kadane’s Algorithm)  
+```
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+Output: 6 ([4,-1,2,1])
+
+Input: nums = [1]
+Output: 1
+
+Input: nums = [5,4,-1,7,8]
+Output: 23
+```
+4. Merge Intervals```
+    Examples:
+    Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+    Output: [[1,6],[8,10],[15,18]]
+    
+    Input: intervals = [[1,4],[4,5]]
+    Output: [[1,5]] 
+  ```
+
+5. Product of Array Except Self
+```
+  Input: nums = [1,2,3,4]
+Output: [24,12,8,6]
+
+Input: nums = [-1,1,0,-3,3]
+Output: [0,0,9,0,0]
+```
+
+
 
 ## 🔹 Strings
 6. Valid Palindrome  
