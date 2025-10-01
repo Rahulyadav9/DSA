@@ -18,6 +18,31 @@ Input: `"abcabcbb"` → Output: `3` (`"abc"`)
 **Q:** Find the longest palindromic substring in a given string.
 **Example:**
 Input: `"babad"` → Output: `"bab"` or `"aba"`
+const input = "babad".split(''); // convert to array
+let res = [];
+
+for (let l = 0; l < input.length; l++) {
+  for (let r = l + 1; r <= input.length; r++) {
+    const subArr = input.slice(l, r);
+    if (isValid(subArr)) {
+      res.push(subArr.join(''));
+    }
+  }
+}
+
+function isValid(arr) {
+  let left = 0;
+  let right = arr.length - 1;
+  while (left < right) {
+    if (arr[left] !== arr[right]) return false;
+    left++;
+    right--;
+  }
+  return arr.length > 1; // only palindromes with length > 1
+}
+
+console.log(res); 
+// Output: ["bab", "aba"]
 
 ---
 
