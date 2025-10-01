@@ -10,12 +10,12 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
    Output: [0,1]
     ```
 2. Best Time to Buy and Sell Stock
-    ```
+    ```js
        Input: prices = [7,1,5,3,6,4]
        Output: 5 (Buy on day 2 → 1, sell on day 5 → 6)
     ```
 3. Maximum Subarray (Kadane’s Algorithm)  
-   ```
+   ```js
       Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
       Output: 6 ([4,-1,2,1])
       
@@ -26,7 +26,7 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
       Output: 23
    ```
 4. Merge Intervals
-   ```
+   ```js
        Examples:
        Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
        Output: [[1,6],[8,10],[15,18]]
@@ -36,7 +36,7 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
    ```
 
 5. Product of Array Except Self
-   ```
+   ```js
      Input: nums = [1,2,3,4]
       Output: [24,12,8,6]
       
@@ -48,7 +48,7 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 
 ## 🔹 Strings
 6. Valid Palindrome
-   ```
+   ```js
      Input: s = "A man, a plan, a canal: Panama"
      Output: true
 
@@ -61,23 +61,23 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
    ```
 
 8. Longest Substring Without Repeating Characters
-    ```
-   Input: s = "abcabcbb"
-   Output: 3
-   Explanation: The answer is "abc".
-   text
-   Copy code
-   Input: s = "bbbbb"
-   Output: 1
-   Explanation: The answer is "b".
-   text
-   Copy code
-   Input: s = "pwwkew"
-   Output: 3
-   Explanation: The answer is "wke"
+    ```js
+         Input: s = "abcabcbb"
+         Output: 3
+         Explanation: The answer is "abc".
+         text
+         Copy code
+         Input: s = "bbbbb"
+         Output: 1
+         Explanation: The answer is "b".
+         text
+         Copy code
+         Input: s = "pwwkew"
+         Output: 3
+         Explanation: The answer is "wke"
    ```
 10. Group Anagrams
-   ```
+   ```js
       Input: strs = ["eat","tea","tan","ate","nat","bat"]
       Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
       text
@@ -90,7 +90,7 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
       Output: [["a"]]
    ```
 12. Longest Palindromic Substring
-    ```
+    ```js
       Input: s = "babad"
       Output: "bab"
       Explanation: "aba" is also a valid answer.
@@ -104,7 +104,7 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
       Output: "a"
     ```  
 14. Valid Parentheses  
-   ```
+   ```js
      Input: s = "()"
       Output: true
       text
@@ -128,17 +128,17 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 
 ## 🔹 Linked List
 11. Reverse Linked List
-    ```
+    ```js
        Input: 1 → 2 → 3 → 4 → 5  
        Output: 5 → 4 → 3 → 2 → 1 
     ```
 13. Merge Two Sorted Lists
-   ```
+   ```js
        Input: l1 = 1 → 2 → 4, l2 = 1 → 3 → 4  
         Output: 1 → 1 → 2 → 3 → 4 → 4  
    ``` 
 15. Linked List Cycle Detection
-  ```
+  ```js
        Input: head = [3,2,0,-4], pos = 1 (tail connects to node index 1)  
       Output: true  
       
@@ -149,12 +149,12 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
       Output: false  
    ```  
 17. Remove Nth Node From End
-    ```
+    ```js
        Input: head = [1,2,3,4,5], n = 2  
        Output: [1,2,3,5] 
     ```
 19. Add Two Numbers (Linked List)  
-    ```
+    ```js
        Input: l1 = [2,4,3], l2 = [5,6,4]  
       Output: [7,0,8]  
       Explanation: 342 + 465 = 807
@@ -163,20 +163,20 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 
 ## 🔹 Stacks & Queues
 16. Min Stack
-    ```
+    ```js
        Input: ["MinStack","push","push","push","getMin","pop","top","getMin"]  
        [[],[-2],[0],[-3],[],[],[],[]]  
       Output: [null,null,null,null,-3,null,0,-2]
     ```
 18. Implement Queue using Stacks
-    ```
+    ```js
        Input:  
       ["MyQueue","push","push","peek","pop","empty"]  
       [[],[1],[2],[],[],[]]  
       Output: [null,null,null,1,1,false]
     ```
 20. Valid Parentheses (Stack)
-    ```
+    ```js
        Input: "()"  
       Output: true  
       
@@ -187,12 +187,12 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
       Output: false 
     ```
 22. Daily Temperatures
-    ```
+    ```js
        Input: [73,74,75,71,69,72,76,73]  
       Output: [1,1,4,2,1,1,0,0]
     ```
 24. Sliding Window Maximum  
-    ```
+    ```js
        Input: nums = [1,3,-1,-3,5,3,6,7], k = 3  
       Output: [3,3,5,5,6,7]  
     ```
