@@ -5,7 +5,7 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 
 ## 🔹 Arrays
 1. Two Sum
-   ```
+   ```js
    Input: nums = [2,7,11,15], target = 9
    Output: [0,1]
     ```
