@@ -199,11 +199,50 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 ---
 
 ## 🔹 Binary Trees
-21. Maximum Depth of Binary Tree  
-22. Symmetric Tree  
-23. Binary Tree Level Order Traversal  
-24. Lowest Common Ancestor  
-25. Diameter of Binary Tree  
+21. Maximum Depth of Binary Tree
+    ```js
+       Input: root = [3,9,20,null,null,15,7]  
+      Output: 3  
+      
+      Input: root = [1,null,2]  
+      Output: 2  
+    ```
+23. Symmetric Tree
+    ```js
+       Input: root = [1,2,2,3,4,4,3]  
+      Output: true  
+      
+      Input: root = [1,2,2,null,3,null,3]  
+      Output: false
+    ````
+25. Binary Tree Level Order Traversal
+    ```js
+       Input: root = [3,9,20,null,null,15,7]  
+      Output: [[3],[9,20],[15,7]]  
+      
+      Input: root = [1]  
+      Output: [[1]]  
+      
+      Input: root = []  
+      Output: []
+    ```
+27. Lowest Common Ancestor
+    ```js
+       Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1  
+      Output: 3  
+      
+      Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4  
+      Output: 5  
+    ```
+29. Diameter of Binary Tree
+    ```js
+         Input: root = [1,2,3,4,5]  
+         Output: 3  
+         Explanation: Longest path is [4,2,1,3] or [5,2,1,3]  
+         
+         Input: root = [1,2]  
+         Output: 1  
+    ```
 
 ---
 
