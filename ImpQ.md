@@ -123,7 +123,7 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
       Copy code
       Input: s = "{[]}"
       Output: true
-         ```
+   ```
 ---
 
 ## 🔹 Linked List
