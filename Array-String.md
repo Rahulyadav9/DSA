@@ -60,7 +60,18 @@ Input: `s = "ADOBECODEBANC"`, `t = "ABC"` → Output: `"BANC"`
 **Q:** Group words that are anagrams.
 **Example:**
 Input: `["eat","tea","tan","ate","nat","bat"]` → Output: `[["eat","tea","ate"],["tan","nat"],["bat"]]`
-
+```
+let map = {};
+for(let i of s){
+    let ns = i.split('').sort().join('');
+    if(map[ns]){
+        map[ns].push(i);
+    }else{
+        map[ns] = [i];
+    }
+}
+console.log(Object.values(map))
+```
 ---
 
 ### 5. Substring with Concatenation of All Words
