@@ -127,21 +127,75 @@ solution: https://github.com/Rahulyadav9/DSA/blob/main/dsa_50_solutions_js.md
 ---
 
 ## 🔹 Linked List
-11. Reverse Linked List  
-12. Merge Two Sorted Lists  
-13. Linked List Cycle Detection  
-14. Remove Nth Node From End  
-15. Add Two Numbers (Linked List)  
-
+11. Reverse Linked List
+    ```
+       Input: 1 → 2 → 3 → 4 → 5  
+       Output: 5 → 4 → 3 → 2 → 1 
+    ```
+13. Merge Two Sorted Lists
+   ```
+       Input: l1 = 1 → 2 → 4, l2 = 1 → 3 → 4  
+        Output: 1 → 1 → 2 → 3 → 4 → 4  
+   ``` 
+15. Linked List Cycle Detection
+  ```
+       Input: head = [3,2,0,-4], pos = 1 (tail connects to node index 1)  
+      Output: true  
+      
+      Input: head = [1,2], pos = 0  
+      Output: true  
+      
+      Input: head = [1], pos = -1  
+      Output: false  
+   ```  
+17. Remove Nth Node From End
+    ```
+       Input: head = [1,2,3,4,5], n = 2  
+       Output: [1,2,3,5] 
+    ```
+19. Add Two Numbers (Linked List)  
+    ```
+    Input: l1 = [2,4,3], l2 = [5,6,4]  
+   Output: [7,0,8]  
+   Explanation: 342 + 465 = 807
+    ```
 ---
 
 ## 🔹 Stacks & Queues
-16. Min Stack  
-17. Implement Queue using Stacks  
-18. Valid Parentheses (Stack)  
-19. Daily Temperatures  
-20. Sliding Window Maximum  
-
+16. Min Stack
+    ```
+       Input: ["MinStack","push","push","push","getMin","pop","top","getMin"]  
+       [[],[-2],[0],[-3],[],[],[],[]]  
+      Output: [null,null,null,null,-3,null,0,-2]
+    ```
+18. Implement Queue using Stacks
+    ```
+       Input:  
+      ["MyQueue","push","push","peek","pop","empty"]  
+      [[],[1],[2],[],[],[]]  
+      Output: [null,null,null,1,1,false]
+    ```
+20. Valid Parentheses (Stack)
+    ```
+       Input: "()"  
+      Output: true  
+      
+      Input: "()[]{}"  
+      Output: true  
+      
+      Input: "(]"  
+      Output: false 
+    ```
+22. Daily Temperatures
+    ```
+       Input: [73,74,75,71,69,72,76,73]  
+      Output: [1,1,4,2,1,1,0,0]
+    ```
+24. Sliding Window Maximum  
+    ```
+       Input: nums = [1,3,-1,-3,5,3,6,7], k = 3  
+      Output: [3,3,5,5,6,7]  
+    ```
 ---
 
 ## 🔹 Binary Trees
