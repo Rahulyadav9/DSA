@@ -1,3 +1,4 @@
+```
 const arr = [0,1,2,0,1,2,2,0,1,2];
 
 let low = 0, mid = 0, high = arr.length - 1;
@@ -17,3 +18,4 @@ while (mid <= high) {
 
 console.log(arr);
 // [0, 0, 0, 1, 1, 1, 2, 2, 2, 2]
+```
