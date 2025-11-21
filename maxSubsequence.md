@@ -12,7 +12,7 @@ const arr = [10, 9, 2, 5, 3, 7, 101, 18];
 ]
 
 */
-
+```js
 let newArr = [];
 
 for (let i = 0; i < arr.length; i++) {
@@ -29,3 +29,4 @@ let longest = newArr.reduce((a, b) => (a.length > b.length ? a : b));
 
 console.log("All subsequences:", newArr);
 console.log("Longest subsequence:", longest);
+```
