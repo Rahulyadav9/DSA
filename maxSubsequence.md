@@ -1,3 +1,4 @@
+```js
 const arr = [10, 9, 2, 5, 3, 7, 101, 18];
 /*
   [
@@ -12,7 +13,7 @@ const arr = [10, 9, 2, 5, 3, 7, 101, 18];
 ]
 
 */
-```js
+
 let newArr = [];
 
 for (let i = 0; i < arr.length; i++) {
