@@ -2,7 +2,7 @@
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-ar twoSum = function(nums, target) {
+var twoSum = function(nums, target) {
     /*let map = new Map();
     let arr = [];
     for(let i=0; i<nums.length;i++){
