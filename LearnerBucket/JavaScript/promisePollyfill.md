@@ -84,4 +84,21 @@ class MyPromise {
       });
   }
 }
-```js
+
+//usage
+const promise = new MyPromise((resolve, reject) => {
+
+    setTimeout(() => {
+        resolve("Success");
+    }, 1000);
+});
+
+promise
+    .then((data) => {
+        console.log(data);
+        return "Next Step";
+    })
+    .then((data) => {
+        console.log(data);
+    });
+```
