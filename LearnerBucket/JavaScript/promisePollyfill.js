@@ -1,87 +1,87 @@
 
 ###Write an function in javascript which works similar like original promise?
 
-  ```js
-  class MyPromise {
+```js
+class MyPromise {
 
-    constructor(executor) {
+  constructor(executor) {
 
-        this.state = "pending";
-        this.value = undefined;
+      this.state = "pending";
+      this.value = undefined;
 
-        this.onResolveCallbacks = [];
-        this.onRejectCallbacks = [];
+      this.onResolveCallbacks = [];
+      this.onRejectCallbacks = [];
 
-        const resolve = (value) => {
+      const resolve = (value) => {
 
-            if (this.state === "pending") {
+          if (this.state === "pending") {
 
-                this.state = "fulfilled";
-                this.value = value;
+              this.state = "fulfilled";
+              this.value = value;
 
-                this.onResolveCallbacks.forEach(fn => fn(value));
-            }
-        };
+              this.onResolveCallbacks.forEach(fn => fn(value));
+          }
+      };
 
-        const reject = (reason) => {
+      const reject = (reason) => {
 
-            if (this.state === "pending") {
+          if (this.state === "pending") {
 
-                this.state = "rejected";
-                this.value = reason;
+              this.state = "rejected";
+              this.value = reason;
 
-                this.onRejectCallbacks.forEach(fn => fn(reason));
-            }
-        };
+              this.onRejectCallbacks.forEach(fn => fn(reason));
+          }
+      };
 
-        try {
-            executor(resolve, reject);
-        }
-        catch (error) {
-            reject(error);
-        }
-    }
+      try {
+          executor(resolve, reject);
+      }
+      catch (error) {
+          reject(error);
+      }
+  }
 
-    then(onFulfilled) {
+  then(onFulfilled) {
 
-        return new MyPromise((resolve, reject) => {
+      return new MyPromise((resolve, reject) => {
 
-            if (this.state === "fulfilled") {
+          if (this.state === "fulfilled") {
 
-                const result = onFulfilled(this.value);
-                resolve(result);
-            }
+              const result = onFulfilled(this.value);
+              resolve(result);
+          }
 
-            else if (this.state === "pending") {
+          else if (this.state === "pending") {
 
-                this.onResolveCallbacks.push((value) => {
+              this.onResolveCallbacks.push((value) => {
 
-                    const result = onFulfilled(value);
-                    resolve(result);
-                });
-            }
-        });
-    }
+                  const result = onFulfilled(value);
+                  resolve(result);
+              });
+          }
+      });
+  }
 
-    catch(onRejected) {
+  catch(onRejected) {
 
-        return new MyPromise((resolve, reject) => {
+      return new MyPromise((resolve, reject) => {
 
-            if (this.state === "rejected") {
+          if (this.state === "rejected") {
 
-                const result = onRejected(this.value);
-                resolve(result);
-            }
+              const result = onRejected(this.value);
+              resolve(result);
+          }
 
-            else if (this.state === "pending") {
+          else if (this.state === "pending") {
 
-                this.onRejectCallbacks.push((reason) => {
+              this.onRejectCallbacks.push((reason) => {
 
-                    const result = onRejected(reason);
-                    resolve(result);
-                });
-            }
-        });
-    }
+                  const result = onRejected(reason);
+                  resolve(result);
+              });
+          }
+      });
+  }
 }
 ```js
